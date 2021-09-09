@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Georama', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+/* main content */
+#main{
+    max-width: 600px;
+    margin: 10vh auto 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color:rgba(253, 245, 230, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* main section */
+#main-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+#main-section > div{
+    margin: 0 5px;
+}
+
+#temp-range{
+    align-self: flex-end;
+}
+
+
+/* temp and humid section */
+#temp-humid-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#temp-humid-section > div{
+    margin: 0 10px;
+}
+
+.temp,.humidity{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* date and location */
+#date, #location{
+    margin-top: 20px;
+}
+
+/* text style */
+.text{
+    font-size: 1rem;
+    color: #666666;
+}
+
+/* icon image */
+.weather-icon{
+    width: 120px;
+}
+
+/* wind section */
+#wind-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#wind-section > div{
+    margin: 0 10px;
+}
+
+/* city select */
+#city{
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: 2px solid;
+    margin-top: 20px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* media query */
+
+@media (max-width:600px){
+    #main{
+        max-width: 480px;
+    }
+}
+
+@media (max-width:380px){
+    #main{
+        max-width: 340px;
+        font-size: 1.5rem;
+    }
+    #main-section{
+        font-size: 1.7rem;
+    }
+    
+}
+
+@media (max-height: 600px){
+    body{
+        overflow:auto;
+        height: 160vh;
+    }
+}
+

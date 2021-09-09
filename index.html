@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<title>weather</title>
+	</head>
+
+	<body>
+		<section id="main">
+			<h1>Weather search</h1>
+			<div id="main-section">
+				<div>
+					<img src="" alt="" class="weather-icon" />
+					<p class="description"></p>
+				</div>
+				<div id="temp-range">
+					<p class="temp-max"></p>
+					<p class="temp-min"></p>
+				</div>
+			</div>
+			<select name="city" id="city">
+				<option value="Taipei">台北市</option>
+				<option value="New Taipei">新北市</option>
+				<option value="Taoyuan">桃園市</option>
+				<option value="Hsinchu">新竹縣</option>
+				<option value="Miaoli">苗栗縣</option>
+				<option value="Taichung">台中市</option>
+				<option value="彰化市">彰化縣</option>
+				<option value="Nantou">南投縣</option>
+				<option value="Yunlin">雲林縣</option>
+				<option value="Chiayi">嘉義縣</option>
+				<option value="Tainan">台南市</option>
+				<option value="Kaohsiung">高雄市</option>
+				<option value="Pingtung">屏東縣</option>
+				<option value="Yilan">宜蘭縣</option>
+				<option value="Taitung">台東縣</option>
+			</select>
+			<p id="date"></p>
+			<p id="location"></p>
+			<div id="temp-humid-section">
+				<div>
+					<p class="temp"></p>
+					<p class="text">temperature</p>
+				</div>
+				<div>
+					<p class="humidity"></p>
+					<p class="text">humidity</p>
+				</div>
+			</div>
+			<div id="wind-section">
+				<div>
+					<p class="wind-speed"></p>
+					<p class="text">speed</p>
+				</div>
+				<div>
+					<p class="wind-deg"></p>
+					<p class="text">degree</p>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<p>copy right &copy; weather search By Rudy Yeh 2021</p>
+		</footer>
+		<script src="main.js"></script>
+	</body>
+</html>
